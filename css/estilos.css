@@ -1,0 +1,207 @@
+/*GOOGLE FONTS
+font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;*/
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+   display: grid;
+   grid-template-columns: repeat(14,1fr);
+   grid-template-rows: repeat(14,1fr);
+   grid-template-areas: "A A A A A A A A A A A A A A"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "B B B B B B B B B B B B B B"
+   "C C C C C C C C C C C C C C" 
+   "C C C C C C C C C C C C C C" ;
+}
+.box1{
+    display:grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "A1 A1 A2 A2 A2 A2 A2 A3 A3 A3 A3 A3 A3 A3";
+  }
+   .cabecera{background-color: #182846; color:white;grid-area: A;}
+   .logo{grid-area: A1;}
+   .letrero{color: #FFF;grid-area: A2;}
+   .menuHorizontal{grid-area:A3;}
+ .contenidoPrincipal{background-color: #fff; color:white;grid-area: B;}
+
+   .box2{
+    display:grid;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1"
+    "B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2"
+    "B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2"; 
+   }
+   
+    .portada{
+        grid-area: B1;
+    }
+   .servicios{
+    grid-area: B2;
+  }
+.box3{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-areas: 
+    "B11 B11 B11 B11 B11 B11 B11 B11 "
+    "B21 B21 B22 B22 B23 B23 B24 B24 "
+    "B25 B25 B26 B26 B27 B27 B28 B28 ";  
+  }
+  .letrero2{
+      grid-area: B11;
+  }
+  .servicio1{
+      grid-area: B21
+  }
+  .servicio2{
+    grid-area: B22
+}
+.servicio3{
+    grid-area: B23
+}
+.servicio4{
+    grid-area: B24
+}
+.servicio5{
+    grid-area: B25
+}
+.servicio6{
+    grid-area: B26
+}
+.servicio7{
+    grid-area: B27
+}
+.servicio8{
+    grid-area: B28
+}
+
+.piecera{ 
+       background-color:gray;
+        grid-area: C;
+        font-size: 20px; 
+        color: #444; 
+        column-count: 3;
+        column-gap: 1em;
+    }
+
+    /**Banner**/
+.main-banner{
+    background-image: url(../images/background.jpg);
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.contenido-banner{
+    flex: 1;
+    color: #FFF;
+}
+
+/**Banner dashboard**/
+.dash-banner{
+    background-image: url(../images/banner.jpg);
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+/**INVITADOS**/
+
+ul.lista-invitados li {
+    padding: 10px;
+    float: left;
+}
+
+@media only screen and (min-width: 480px) {
+    ul.lista-invitados li {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    ul.lista-invitados li {
+        width: 33.3%;
+    }
+}
+
+div.invitado {
+    position: relative;
+    overflow: hidden;
+}
+
+div.invitado img {
+    max-width: 100%;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
+}
+
+div.invitado:hover img {
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.05);
+}
+
+div.invitado p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fe4918;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+li.itemN a{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+div.invitado:hover p {
+    bottom: -80px;
+    opacity: 0;
+}
+
+nav.redes-sociales {
+    text-align: center;
+}
+
+nav.redes-sociales a {
+    color: #ffffff;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+nav.redes-sociales a :last-child {
+    margin-right: 0;
+}
+
+div.footer p{
+    color: #fff;
+}
+div.footer img{
+    margin-bottom: 30px;
+}
+a.s-n i{
+    color:#fff;
+}

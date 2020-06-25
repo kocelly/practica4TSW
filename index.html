@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tópicos de Seguridad Web</title>
+
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&family=Open+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/f37ca6b8e4.js" crossorigin="anonymous"></script>
+  <!--CSS Nativo-->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/candado.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Tópicos de Seguridad Web
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#first">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="first">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item itemN">
+              <a class="nav-link" href="#">Página Principal<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item itemN">
+              <a class="nav-link" href="#">Acerca de<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item itemN">
+              <a class="nav-link" href="#">Contacto<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item itemN">
+              <a class="nav-link" href="#">Tema<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item itemN active">
+              <a class="nav-link" href="app/login.php">Iniciar sesión
+                <i class="fas fa-user"></i>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main-banner">
+      <div class="container contenido-banner">
+        <h2 class="H2">
+          Bienvenidos a la página Web de TSW
+        </h2>
+      </div>
+    </section>
+
+    <section class="invitados seccion container">
+      <h2>Temas de interes para seguridad web</h2>
+      <ul class="lista-invitados clearfix">
+        <li>
+          <div class="invitado">
+            <img src="images/tema1.jpg" alt="imagen invitado">
+            <p>Tema 1</p>
+          </div>
+        </li>
+        <li>
+          <div class="invitado">
+            <img src="images/tema6.jpg" alt="imagen invitado">
+            <p>Tema 2</p>
+          </div>
+        </li>
+        <li>
+          <div class="invitado">
+            <img src="images/tema2.jpg" alt="imagen invitado">
+            <p>Tema 3</p>
+          </div>
+        </li>
+        <li>
+          <div class="invitado">
+            <img src="images/tema3.jpg" alt="imagen invitado">
+            <p>Tema 4</p>
+          </div>
+        </li>
+        <li>
+          <div class="invitado">
+            <img src="images/tema4.jpg" alt="imagen invitado">
+            <p>Tema 5</p>
+          </div>
+        </li>
+        <li>
+          <div class="invitado">
+            <img src="images/tema5.jpg" alt="imagen invitado">
+            <p>Tema 6</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer font-small indigo">
+
+    <!-- Footer Links -->
+    <div class="bg-dark">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Página principal</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Acerca de</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Contacto</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Tema</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="app/login.php">Iniciar sesión</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+
+        <div class="col-md-8 col-12 mt-5 footer">
+          <img src="images/profile.png" alt="Foto de perfil" width="150px"> <br>
+          <p style="line-height: 1.7rem">Hecho con ❤️ y ☕ por: Kocelly Alberto Ramirez Flores</p>
+          <p style="line-height: 1.7rem">N° de ctrl: 16091194</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+      <!-- Grid row-->
+      <div class="row pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-12">
+
+          <div class="redes-sociales" align="center">
+
+            <!-- Facebook -->
+            <a class="fb-ic s-n">
+              <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic s-n">
+              <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic s-n">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic s-n">
+              <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+      </div>
+    </div>
+    <!-- Footer Links -->
+  </footer>
+  <!-- Footer -->
+  <!--Scripts Bootstrap CSS-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

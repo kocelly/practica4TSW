@@ -1,0 +1,15 @@
+.ulMenu{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+ }
+ .liMenu{
+ display:inline;
+ font-size:1.1em;
+ font-weight:bold;
+ margin-right:5px;
+ }
+ .aMenu{
+ color:white;
+ text-decoration:none;
+ }
